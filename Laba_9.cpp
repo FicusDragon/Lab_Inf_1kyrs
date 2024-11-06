@@ -8,7 +8,7 @@ struct Worker {
     int No;
     string surname;
     string name;
-    string s;
+    string gender;
     int yearBirth;
     int yearEmployment;
 };
@@ -37,14 +37,14 @@ int main() {
 
     cout << "Исходная таблица:" << endl;
     for (const auto& worker : workers) {
-        cout << worker.No << " " << worker.surname << " " << worker.name << " " << worker.s << " " << worker.yearBirth << " " << worker.yearEmployment << endl;
+        cout << worker.No << " " << worker.surname << " " << worker.name << " " << worker.gender << " " << worker.yearBirth << " " << worker.yearEmployment << endl;
     }
 
     sort(workers.begin(), workers.end(), compareWorkers);
 
     cout << "\nОтсортированная таблица:" << endl;
     for (const auto& worker : workers) {
-        cout << worker.No << " " << worker.surname << " " << worker.name << " " << worker.s << " " << worker.yearBirth << " " << worker.yearEmployment << endl;
+        cout << worker.No << " " << worker.surname << " " << worker.name << " " << worker.gender << " " << worker.yearBirth << " " << worker.yearEmployment << endl;
     }
 
     return 0;
